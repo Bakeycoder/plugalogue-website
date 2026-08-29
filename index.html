@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugalogue Sandbox | Coming Soon</title>
+    <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+    <style>
+        body {
+            background-color: #0f1115; /* Deep dark background */
+            color: #e2e8f0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .hero-glow {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(15,17,21,0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden relative min-h-screen flex flex-col">
+
+    <div class="hero-glow"></div>
+
+
+
+    <!-- Hero Section -->
+    <main class="max-w-7xl mx-auto px-6 pt-12 pb-24 text-center relative z-10 flex-grow">
+        
+        <div class="flex justify-center mb-8">
+            <img src="images/logo.png" alt="Plugalogue Sandbox Pro" class="w-[400px] md:w-[600px] object-contain drop-shadow-[0_0_25px_rgba(99,102,241,0.5)]">
+        </div>
+        
+        <div class="mt-10 flex justify-center">
+            <div class="px-10 py-4 bg-indigo-600/20 text-indigo-300 font-semibold rounded-full border border-indigo-500/30 cursor-not-allowed flex items-center justify-center gap-3 tracking-wide">
+                <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                COMING SOON
+            </div>
+        </div>
+
+        <!-- Blurred App Screenshot Teaser -->
+        <div class="mt-20 relative mx-auto w-full max-w-6xl">
+            <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-2xl blur-xl opacity-20"></div>
+            <div class="relative bg-black ring-1 ring-white/10 rounded-2xl overflow-hidden shadow-2xl">
+                <!-- Using the new user uploaded image, applying Tailwind blur -->
+                <img src="images/screenshot.png" alt="Plugalogue Sandbox Teaser" class="w-full object-cover blur-md opacity-60 transition duration-1000 hover:blur-sm">
+                
+                <!-- Overlay Gradient to fade it into the background -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0f1115] via-transparent to-transparent pointer-events-none"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/5 text-center mt-auto">
+        <p class="text-slate-600 text-sm">© 2026 Dave Bakewell. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
